@@ -1,12 +1,14 @@
 import re
 
-ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
+ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+
 
 def rule1(string):
     count = 0
-    for vowel in 'aeiou':
+    for vowel in "aeiou":
         count += string.count(vowel)
     return count >= 3
+
 
 def rule2(string):
     for letter in ALPHABET:
@@ -14,11 +16,13 @@ def rule2(string):
             return True
     return False
 
+
 def rule3(string):
-    for pair in ['ab', 'cd', 'pq', 'xy']:
+    for pair in ["ab", "cd", "pq", "xy"]:
         if pair in string:
             return False
     return True
+
 
 def execute1(puzzle_input):
     count = 0
@@ -27,12 +31,14 @@ def execute1(puzzle_input):
             count += 1
     return count
 
+
 def rule4(string):
     for a in ALPHABET:
         for b in ALPHABET:
             if string.count(a + b) >= 2:
                 return True
     return False
+
 
 def rule5(string):
     for letter in ALPHABET:
