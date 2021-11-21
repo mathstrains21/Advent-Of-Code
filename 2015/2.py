@@ -1,5 +1,5 @@
-def execute1(input):
-    presents = input.splitlines()
+def execute1(puzzle_input):
+    presents = puzzle_input.splitlines()
     square_feet = 0
     for present in presents:
         l, w, h = [int(dimension) for dimension in present.split('x')]
@@ -7,8 +7,8 @@ def execute1(input):
         square_feet += sum([2 * side for side in sides]) + min(sides)
     return square_feet
 
-def execute2(input):
-    presents = input.splitlines()
+def execute2(puzzle_input):
+    presents = puzzle_input.splitlines()
     feet = 0
     for present in presents:
         l, w, h = [int(dimension) for dimension in present.split('x')]
