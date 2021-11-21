@@ -5,7 +5,7 @@ def main(year: int, day: int, part: int):
     module = importlib.import_module(f"{year}.{day}")
     with open(f"{year}/{day}.input", "r") as file:
         input = file.read()
-    getattr(module, f"execute{part}")(input)
+    print(getattr(module, f"execute{part}")(input))
 
 if __name__ == '__main__':
     typer.run(main)
