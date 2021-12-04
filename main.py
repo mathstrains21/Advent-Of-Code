@@ -4,7 +4,13 @@ import importlib
 def main(year: int, day: int, part: int, debug: bool = False):
     module = importlib.import_module(f"{year}.{day}")
     if debug:
-        puzzle_input = input('Input: ')
+        puzzle_input = ""
+        while True:
+            line = input("Input: ")
+            if ''.join(line.split()) == "":
+                break
+            puzzle_input += "\n"
+            puzzle_input += line
     else:
         with open(f"{year}/{day}.input", "r") as file:
             puzzle_input = file.read()
