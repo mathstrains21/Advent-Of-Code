@@ -1,4 +1,4 @@
-def execute1(input):
+def execute1(puzzle_input):
     increased = 0
     previous = int(input.splitlines()[0])
     for number in input.splitlines()[1:]:
@@ -7,7 +7,7 @@ def execute1(input):
         previous = int(number)
     return increased
 
-def execute2(input):
+def execute2(puzzle_input):
     nums = [int(n) for n in input.splitlines()]
     return sum(
     a + b + c < b + c + d
