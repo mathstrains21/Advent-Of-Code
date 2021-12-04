@@ -9,7 +9,7 @@ def main(year: int, day: int, part: int, debug: bool = False):
         puzzle_input = ""
         while True:
             line = input("Input: ")
-            if ''.join(line.split()) == "":
+            if "".join(line.split()) == "":
                 break
             puzzle_input += "\n"
             puzzle_input += line
