@@ -16,7 +16,7 @@ def main(year: int, day: int, part: int, debug: bool = False):
     else:
         with open(f"{year}/{day}.input", "r") as file:
             puzzle_input = file.read()
-    print(getattr(module, f"execute{part}")(puzzle_input))
+    print(getattr(module, f"execute{part}")(puzzle_input=puzzle_input))
 
 
 if __name__ == "__main__":
