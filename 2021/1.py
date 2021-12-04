@@ -7,9 +7,10 @@ def execute1(puzzle_input):
         previous = int(number)
     return increased
 
+
 def execute2(puzzle_input):
     nums = [int(n) for n in puzzle_input.splitlines()]
     return sum(
-    a + b + c < b + c + d
-    for a, b, c, d in zip(nums, nums[1:], nums[2:], nums[3:])
-)
+        a + b + c < b + c + d
+        for a, b, c, d in zip(nums, nums[1:], nums[2:], nums[3:])
+    )
