@@ -11,7 +11,12 @@ def parse(instruction):
         elif sections[1] == 'off':
             action = 'off'
         coords = sections[2:]
-    return action, tuple([int(val) for val in coords[0].split(',')]), tuple([int(val) for val in coords[2].split(',')])
+    return (
+        action,
+        tuple([int(val) for val in coords[0].split(',')]),
+        tuple([int(val) for val in coords[2].split(',')])
+    )
+
 
 def execute1(puzzle_input):
     grid = [[False for _ in range(1000)] for _ in range(1000)]

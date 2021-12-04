@@ -17,3 +17,4 @@ def execute2(puzzle_input):
             floor += 1
         elif bracket == ")":
             floor -= 1
+    return None
