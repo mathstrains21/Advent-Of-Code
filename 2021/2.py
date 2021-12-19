@@ -1,7 +1,6 @@
 def execute1(puzzle_input):
-    instructions = [
-        instruction.split() for instruction in puzzle_input.splitlines()
-    ]
+    instructions = [instruction.split()
+                    for instruction in puzzle_input.splitlines()]
     distance = 0
     depth = 0
 
@@ -17,9 +16,8 @@ def execute1(puzzle_input):
 
 
 def execute2(puzzle_input):
-    instructions = [
-        instruction.split() for instruction in puzzle_input.splitlines()
-    ]
+    instructions = [instruction.split()
+                    for instruction in puzzle_input.splitlines()]
     distance = 0
     depth = 0
     aim = 0
