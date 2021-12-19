@@ -19,10 +19,6 @@ def execute1(puzzle_input):
 
 
 def execute2(puzzle_input):
-    santa_instructions = [
-        move for pos, move in enumerate(puzzle_input) if pos % 2 == 0
-    ]
-    robo_instructions = [
-        move for pos, move in enumerate(puzzle_input) if pos % 2 == 1
-    ]
+    santa_instructions = [move for pos, move in enumerate(puzzle_input) if pos % 2 == 0]
+    robo_instructions = [move for pos, move in enumerate(puzzle_input) if pos % 2 == 1]
     return len(execute(santa_instructions) | execute(robo_instructions))
