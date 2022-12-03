@@ -2,7 +2,7 @@ from typing import IO
 
 def p_1(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    instructions = [instruction.split() for instruction in input_file.read().splitlines()]
+    instructions = [instruction.split() for instruction in input_file.readlines()]
     distance = 0
     depth = 0
 
@@ -19,7 +19,7 @@ def p_1(input_file: IO,
 
 def p_2(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    instructions = [instruction.split() for instruction in input_file.read().splitlines()]
+    instructions = [instruction.split() for instruction in input_file.readlines()]
     distance = 0
     depth = 0
     aim = 0

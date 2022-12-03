@@ -16,7 +16,7 @@ def chunked(my_list, step):
 
 def p_1(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    data = input_file.read().splitlines()
+    data = input_file.readlines()
     total = 0
     for line in data:
         line_len_half = len(line) // 2

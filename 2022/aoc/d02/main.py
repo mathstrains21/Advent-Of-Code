@@ -2,7 +2,7 @@ from typing import IO
 
 def p_1(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    data = input_file.read().splitlines()
+    data = input_file.readlines()
     score = 0
 
     for line in data:
@@ -22,7 +22,7 @@ def p_1(input_file: IO,
 
 def p_2(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    data = input_file.read().splitlines()
+    data = input_file.readlines()
     score = 0
 
     for line in data:

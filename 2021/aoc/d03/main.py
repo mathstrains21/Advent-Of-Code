@@ -7,7 +7,7 @@ def parse_bit_pos(arr, pos):
 
 def p_1(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    data = input_file.read().splitlines()
+    data = input_file.readlines()
 
     cols: list = [Counter() for _ in range(len(data[0]))]
 

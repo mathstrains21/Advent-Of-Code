@@ -15,13 +15,13 @@ def execute(data):
 
 def p_1(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    return max(execute(input_file.read().splitlines()))
+    return max(execute(input_file.readlines()))
 
 
 
 def p_2(input_file: IO,
         debug=False): # pylint: disable=unused-argument
-    elves = execute(input_file.read().splitlines())
+    elves = execute(input_file.readlines())
     cals = 0
     for _ in range(3):
         elf = max(elves)
