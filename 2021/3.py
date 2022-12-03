@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 def execute1(puzzle_input):
     data = puzzle_input.splitlines()
 
@@ -17,7 +18,7 @@ def execute1(puzzle_input):
         gamma += col.most_common(1)[0][0]
         epsilon += col.most_common()[-1][0]
 
-    gamma=int(gamma,2)
-    epsilon=int(epsilon,2)
+    gamma = int(gamma, 2)
+    epsilon = int(epsilon, 2)
 
     return gamma * epsilon

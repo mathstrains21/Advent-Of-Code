@@ -1,4 +1,5 @@
-priorities = ' abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+priorities = " abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 
 def chunked(my_list, step):
     start = 0
@@ -6,8 +7,9 @@ def chunked(my_list, step):
     list = []
     for i in range(start, end, step):
         x = i
-        list.append(my_list[x:x+step])
+        list.append(my_list[x : x + step])
     return list
+
 
 def execute1(puzzle_input):
     data = puzzle_input.splitlines()
@@ -20,6 +22,7 @@ def execute1(puzzle_input):
         total += priorities.index(letter)
     return total
 
+
 def execute2(puzzle_input):
     data = chunked(puzzle_input.splitlines(), 3)
     total = 0
@@ -27,4 +30,3 @@ def execute2(puzzle_input):
         letter = (set(chunk[0]) & set(chunk[1]) & set(chunk[2])).pop()
         total += priorities.index(letter)
     return total
-    

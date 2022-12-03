@@ -10,8 +10,10 @@ def execute(data):
             elf = 0
     return elves
 
+
 def execute1(puzzle_input):
     return max(execute(puzzle_input.splitlines()))
+
 
 def execute2(puzzle_input):
     elves = execute(puzzle_input.splitlines())
