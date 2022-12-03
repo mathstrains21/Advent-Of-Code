@@ -1,9 +1,11 @@
 import importlib
+import datetime
 
 import typer
 
+today = datetime.date.today()
 
-def main(year: int, day: int, part: int, debug: bool = False):
+def main(year: int = today.year, day: int = today.day, part: int = 2, debug: bool = False):
     module = importlib.import_module(f"{year}.{day}")
     if debug:
         puzzle_input = ""
