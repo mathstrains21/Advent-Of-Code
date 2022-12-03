@@ -1,0 +1,4 @@
+part: 2
+expected: 34
+
+2x3x4

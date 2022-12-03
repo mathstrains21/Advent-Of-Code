@@ -1,0 +1,4 @@
+part: 1
+expected: 58
+
+2x3x4

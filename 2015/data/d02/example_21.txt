@@ -1,0 +1,4 @@
+part: 2
+expected: 14
+
+1x1x10

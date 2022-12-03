@@ -1,0 +1,4 @@
+part: 1
+expected: 43
+
+1x1x10

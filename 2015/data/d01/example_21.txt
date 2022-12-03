@@ -1,0 +1,4 @@
+part: 2
+expected: 5
+
+()())
