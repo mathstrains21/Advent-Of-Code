@@ -1,0 +1,6 @@
+part: 2
+expected: 12
+
+A Y
+B X
+C Z

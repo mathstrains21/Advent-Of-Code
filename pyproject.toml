@@ -7,6 +7,10 @@ authors = ["mathstrains21 <<>>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 typer = "^0.4.0"
+aoctools = "^0.3.0"
+mypy = "^0.991"
+pylint = "^2.15.7"
+autopep8 = "^2.0.0"
 
 [tool.poetry.dev-dependencies]
 
