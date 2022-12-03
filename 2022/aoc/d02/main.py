@@ -1,7 +1,7 @@
 from typing import IO
 
-def p_1(input_file: IO,
-        debug=False): # pylint: disable=unused-argument
+
+def p_1(input_file: IO, debug=False):  # pylint: disable=unused-argument
     data = input_file.read().splitlines()
     score = 0
 
@@ -20,8 +20,7 @@ def p_1(input_file: IO,
     return score
 
 
-def p_2(input_file: IO,
-        debug=False): # pylint: disable=unused-argument
+def p_2(input_file: IO, debug=False):  # pylint: disable=unused-argument
     data = input_file.read().splitlines()
     score = 0
 
@@ -51,4 +50,3 @@ def p_2(input_file: IO,
                 score += 2
 
     return score
-

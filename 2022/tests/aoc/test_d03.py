@@ -1,5 +1,4 @@
 import aoc.d03
-
 from tests.aoc.test_base import BaseTestCase
 
 

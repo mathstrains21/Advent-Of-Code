@@ -1,5 +1,6 @@
 from typing import IO
 
+
 def execute(data):
     elves = []
     elf = 0
@@ -13,14 +14,11 @@ def execute(data):
     return elves
 
 
-def p_1(input_file: IO,
-        debug=False): # pylint: disable=unused-argument
+def p_1(input_file: IO, debug=False):  # pylint: disable=unused-argument
     return max(execute(input_file.read().splitlines()))
 
 
-
-def p_2(input_file: IO,
-        debug=False): # pylint: disable=unused-argument
+def p_2(input_file: IO, debug=False):  # pylint: disable=unused-argument
     elves = execute(input_file.read().splitlines())
     cals = 0
     for _ in range(3):
