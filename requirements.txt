@@ -1,0 +1,4 @@
+aoctools
+mypy
+pylint
+autopep8
