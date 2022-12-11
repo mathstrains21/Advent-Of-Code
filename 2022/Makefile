@@ -15,3 +15,4 @@ test:
 	aoctools run_examples 7
 	aoctools run_examples 8
 	aoctools run_examples 9
+	aoctools run_examples 10
