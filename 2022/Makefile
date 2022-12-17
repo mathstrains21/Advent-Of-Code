@@ -18,3 +18,4 @@ test:
 	aoctools run_examples 10
 	aoctools run_examples 11
 	aoctools run_examples 12
+	aoctools run_examples 13
